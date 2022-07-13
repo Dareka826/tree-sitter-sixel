@@ -1,0 +1,255 @@
+[
+  {
+    "type": "color_introducer",
+    "named": true,
+    "fields": {
+      "Pc": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Pu": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Px": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Py": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Pz": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "graphics_repeat_introducer",
+    "named": true,
+    "fields": {
+      "Pn": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "character": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "sixel_data_character",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "raster_attributes",
+    "named": true,
+    "fields": {
+      "Pad": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Pan": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Ph": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "Pv": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "sixel_image",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "color_introducer",
+          "named": true
+        },
+        {
+          "type": "graphics_carriage_return",
+          "named": true
+        },
+        {
+          "type": "graphics_new_line",
+          "named": true
+        },
+        {
+          "type": "graphics_repeat_introducer",
+          "named": true
+        },
+        {
+          "type": "raster_attributes",
+          "named": true
+        },
+        {
+          "type": "sixel_data_character",
+          "named": true
+        },
+        {
+          "type": "sixel_end",
+          "named": true
+        },
+        {
+          "type": "sixel_start",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sixel_start",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "sixel_image",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\u001bP",
+    "named": false
+  },
+  {
+    "type": "\u001bP;",
+    "named": false
+  },
+  {
+    "type": "\u001bPq",
+    "named": false
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "graphics_carriage_return",
+    "named": true
+  },
+  {
+    "type": "graphics_new_line",
+    "named": true
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "q",
+    "named": false
+  },
+  {
+    "type": "sixel_data_character",
+    "named": true
+  },
+  {
+    "type": "sixel_end",
+    "named": true
+  }
+]
